@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="blank.master.cs" Inherits="Chathub.blank" %>
+
+<%@ Register Src="~/uc/google.ascx" TagPrefix="uc1" TagName="google" %>
+<%@ Register Src="~/uc/FooterAdvertisement.ascx" TagPrefix="uc1" TagName="FooterAdvertisement" %>
+<%@ Register Src="~/uc/HeaderAdvertisement.ascx" TagPrefix="uc2" TagName="HeaderAdvertisement" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="author" content="SonuStar" />
+    <meta property="og:site_name" content="Chathub.in" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://chathub.in/images/chathub.png" />
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1' />
+    <link rel="canonical" href="http://www.chathub.in" />
+    <link rel="shortcut icon" href="http://chathub.in/images/chathub.png" />
+
+    <meta name="google-site-verification" content="fU2os4muSZfUcgInHoiu2nYdqwQNs00APb_AGuuDAbk" />
+    <meta name="alexaVerifyID" content="http://www.alexa.com/pro/subscription/configure?site=http%3A%2F%2Fchathub.in&puid=200" />
+
+
+    <link href="css/twitter-bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/social.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/themes/social.theme-blue.css" rel="stylesheet" />
+    <link href="css/twitter-bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <style>
+        .wraper #main
+        {
+            margin-top: 40px;
+        }
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+       
+
+         
+        <div class="wraper">
+
+
+            <aside class="social-sidebar">
+
+                <div class="user-settings">
+                    <div class="arrow"></div>
+
+                     
+ 
+                </div>
+
+
+
+                <div class="social-sidebar-content nano">
+                    <div class="content">
+
+                        <div class="user">
+                            <img class="avatar" width="25" height="25" src="images/chathub.png" alt="web.chathub.in">
+                            <span data-toggle="dropdown">Hi Star</span>
+
+                            <i class="icon-user trigger-user-settings"></i>
+                        </div>
+
+                        <div class="navigation-sidebar">
+                            <i class="switch-sidebar-icon icon-align-justify"></i>
+                        </div>
+
+
+                        <div class="search-sidebar">
+                            <img src="img/icons/stuttgart-icon-pack/32x32/search.png" alt="Search">
+                            <div class="search-sidebar-form">
+                                <input type="text" class="search-query input-block-level" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <section class="menu">
+
+                            <div class="accordion" id="accordion2">
+
+                                <div class="accordion-group active">
+                                    <div class="accordion-heading">
+
+                                        <a class="accordion-toggle opened" data-toggle="collapse" data-parent="#accordion2" href="#collapse-form-stuff">
+                                            <img src="img/icons/stuttgart-icon-pack/32x32/sitemap.png" alt="Form Stuff">
+                                            <span> Star Bar </span>
+
+
+
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </div>
+
+                                    <ul id="collapse-form-stuff" class="accordion-body collapse nav nav-list collapse in">
+
+                                        <li class="active"><a href="/help">Help</a></li>
+                                        <li><a href="/login">Login</a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </aside>
+
+            <header>
+                <nav class="navbar navbar-fixed-top social-navbar">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+
+
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".social-sidebar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
+                            <a class="brand" href="/home">Web.Chathub.in</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="main">
+                <div class="container-fluid">
+                    
+                </div>
+                <div class="container-fluid">
+                    <div class="row-fluid">
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  </asp:ContentPlaceHolder>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="plugins/jquery/jquery.min.js"><\/script>')</script>
+    <script src="plugins/jquery.ui/jquery-ui-1.10.1.custom.min.js"></script>
+    <script src="plugins/jquery.ui.touch-punch/jquery.ui.touch-punch.js"></script>
+    <script src="plugins/twitter-bootstrap/bootstrap.js"></script>
+    <script src="plugins/jquery.slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/extents.js"></script>
+
+    <script src="js/sidebar.js"></script>
+         <script>
+             /*<![CDATA[*/
+             $(function () {
+                 SideBar.init();
+             });
+             /*]]>*/
+    </script>
+
+    </form>
+</body>
+</html>
